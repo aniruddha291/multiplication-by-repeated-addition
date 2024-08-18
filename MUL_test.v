@@ -2,7 +2,7 @@ module MUL_test;
 reg [15:0] data_in;
 reg clk,start;
 wire done;
-MUL_datapath DP(eqz,LdA,LdB,LdP,clrP,decB,data_in,clk);
+multiplication_repeated_addition DP(eqz,LdA,LdB,LdP,clrP,decB,data_in,clk);
 controller CON(LdA,LdB,LdP,clrP,decB,done,clk,eqz,start);
 initial 
 begin
